@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Rubik:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital@1&display=swap');
+
+ :root {
+    --primeira: #4D77FF;
+    --segunda: #56BBF1;
+    --terceira: #B8FFF9;
+    --branco: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+/* MENU FEITO NA BARRA DO TOPO */
+#menu {
+    width: 100%;
+    position: fixed;
+    list-style: none;
+    padding: 0;
+    background-color: rgb(57, 60, 68);
+    font-family: "Merriweather", sans-serif;
+    text-align: center;
+}
+
+#menu li{
+    display: inline;
+}
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    transition: background .3s;
+}
+
+#menu li a:hover {
+    background-color:rgb(55, 82, 201)
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+}
+/* PÁGINA INICIAL, BACKGROUND E TEXTO CENTRAL */
+#header-site {
+    background-image: url(imgs/background.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    text-align: center;
+}
+.saud{
+    font-family: "Roboto", sans-serif;
+    font-size: 39px
+}
+
+/* AQUI COMEÇA A PARTE DO CORPO DO SITE, CONTEUDO */
+#content-site {
+    padding-top: 60px;
+    width: 100%;
+    column-count: 1;    
+}
+
+.coluna {
+    padding: 20px ;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+.coluna p {
+    padding-bottom: 10px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.coluna h1 {
+    padding-bottom: 10px ; 
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+}
+
+.emoji {
+    width: 20px;
+}
+
+.imagem{
+    padding: 15px 50px 30px ;
+}
+
+.coluna1{
+    padding-top: 20px;
+    width: 100%;
+}
+/* PARTE DOS HOBBIES */
+#hoobie {
+    padding-top: 50px;
+    width: 100%;
+    column-count: 1;
+    text-align: center;
+}
+
+.mhobbies {
+    padding: 20px ;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+.img-hobbie{
+    width: 30px
+}
+.mhobbies h1 {
+    padding-bottom: 10px; 
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+}
+
+.mhobbies p {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.imagem1 {
+    display: flex;
+    padding: auto;
+    justify-content: center;
+    gap: 15px;
+} 
+
+.fig1 {
+    width: 160px;
+}
+.legenda1 {
+    text-align: center;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+}
+.fig2 {
+    width: 320px;
+}
+.legenda2 {
+    text-align: center;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+}
+.fig3 {
+    width: 315px;
+}
+.legenda3{
+    text-align: center;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+}
+.legendas {
+    display: flex;
+    padding: auto;
+    justify-content: center;
+    gap: 10px;
+    height: 80px;
+}
+/* VIDA ACADEMICA */
+#vidaacad{
+    padding-top: 50px;
+    width: 100%;
+    column-count: 1;
+    text-align: center;
+}
+
+.vidaac {
+    padding: 20px ;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+.vidaac h1 {
+    align-items: center;
+    padding-bottom: 25px; 
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+}
+.cin{
+    width: 30px
+}
+.vidaac p {
+    text-align: justify;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.fotinha{
+    padding: 0px 10px 30px 25px;
+    width: 340px;
+    float: right;
+}
+.logotipo-cin{
+    width: 300px;
+}
+.logotipo-ufpe{
+    width: 300px;
+}
+/* AQUI ESTÁ A PARTE DO RODAPÉ */
+
+.img-insta{
+    width: 35px;
+}
+.img-github{
+    width: 35px;
+}
+.img-twitter{
+    width: 35px;
+}
+
+#footer {
+    height: 100%;
+    background-image: url(imgs/back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#footer .container {
+    color: #fff;
+    font-family: "Roboto";
+    display: flex;
+    grid-template-columns: repeat(4,1);
+    gap: 100px;
+}
+
+.consideracoes-finais{
+    text-align: justify;
+    width: 280px;
+    margin: 50px  90px 40px;
+}
+
+.contato{
+    text-align: center;
+    width: 280px;
+    margin: 50px  90px 40px;
+}
+
+.redes-sociais{
+    padding-bottom: 10px;
+    text-align: center;
+    width: 280px;
+    margin: 50px 100px 25px 0px;
+}
